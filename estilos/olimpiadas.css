@@ -1,0 +1,40 @@
+/*reset do css*/
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+body{
+	height: 100vh;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 20px;
+    line-height: 2em;
+    width: 600px;
+    margin: auto;
+	padding: 5px;
+	/*box-shadow: 3px 3px 5px rgba(0, 0, 0.473);*/
+}
+
+.img {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/1280px-Olympic_rings_without_rims.svg.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+button,
+input{
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+a {
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5em;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Ficha Academia2.0</title>
+  <script src="https://kit.fontawesome.com/074634d9c3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/academia.css">
+    <script src="scripts/academia.js"></script>
+
+</head>
+<body>
+  <h2> Ficha do aluno</h2>
+  <label for="inputNome"> Nome: </label>
+  <br>
+  <input id="inputNome" type="text">
+  <label for="inputIdade"> Idade: </label>
+  <br>
+  <input id="inputIdade" type="number">
+  <label for="inputNascimento"> Data de Nascimento: </label>
+  <br>
+  <input id="inputNascimento" type="date">
+  <label for="inputAltura"> Altura (m): </label>
+  <br>
+  <input id="inputAltura" type="text">
+  <label for="inputPeso"> Peso (kg): </label>
+  <br>
+  <input id="inputPeso" type="text">
+  <label for="inputCondicao"> Tem condição pré-existente? (sim ou não): </label>
+  <br>
+  <input id="inputCondicao" type="text">
+
+  <button id="botaoPreencher" onclick="preencher()">Preencher Ficha</button>
+
+  <ul id="lista"></ul>
+  
+  <!-- botão voltar portfólio -->
+  <div>
+    <a href="index.html#portfolio"><i class="fas fa-chevron-left"></i> Voltar</a>
+  </div>
+
+</body>
+</html>

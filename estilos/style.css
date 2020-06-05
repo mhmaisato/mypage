@@ -1,0 +1,181 @@
+/*reset do css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;
+}
+
+/*se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media(min-width:400px){
+    body{
+        font-size: 14px;
+    }
+    .contato,
+    .portfolio {
+      padding: 3em 2em 2em;
+      height: 100vh;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .contato,
+    .portfolio {
+      padding: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+    .contato,
+    .portfolio {
+      padding: 2em;
+    }
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex; /*deixa o menu na horizontal*/
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*configuração da parte sobre*/
+.sobre a {
+    transition: background-color 1s, color 1s;
+}
+
+.sobre a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*configuração da parte portfólio*/
+.portfolio a {
+    transition: background-color 1s, color 1s;
+}
+.portfolio a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.site-title {
+    color: black;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 4em;
+    line-height: 1em;
+    margin-bottom: 20px;
+    text-align: center;    
+}
+
+.site-subtitle {
+    color: black ;
+    font-style: italic;
+    font-family: 'Courgette', cursive;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+}
+
+.sobre,
+.portfolio,
+.contato {
+    padding: 2.5em;
+    min-height: 100vh;
+}
+
+.sobre h2,
+.portfolio h2,
+.contato h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.contato,
+.icons {
+    text-align: center;
+  }
+
+.contato a {
+    color: black;
+    font-size: 4em;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.icons a{
+    color: black;
+    font-size: 6em;
+}
+
+.sobre p,
+.projetos p {
+    margin-left: 2em;
+    padding: 0.1em;
+}
+
+.lista li {
+    list-style: none;
+    margin-left: 3em;
+    padding: 0.2em;
+}
+
+/*botão voltar ao topo*/
+#subir{
+    position:fixed;
+	bottom:10px;
+	right:10px;
+}
