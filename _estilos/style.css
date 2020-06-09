@@ -5,44 +5,20 @@
     box-sizing: border-box;
 }
 
+/*configuração do body*/
 body {
     background-color: white;
     height: 100vh;
     font-family: 'Comfortaa', cursive;
 }
 
-/*se a tela tiver pelo menos 400px vai carregar estes estilos*/
-@media(min-width:400px){
-    body{
-        font-size: 14px;
-    }
-    .contato,
-    .portfolio {
-      padding: 3em 2em 2em;
-      height: 100vh;
-    }
+/*configuração do a href*/
+a {
+    color: black;
+    text-decoration: none;
 }
 
-@media (min-width: 600px) {
-    body {
-        font-size: 18px;
-    }
-    .contato,
-    .portfolio {
-      padding: 2em;
-    }
-}
-
-@media (min-width: 1200px) {
-    body {
-        font-size: 20px;
-    }
-    .contato,
-    .portfolio {
-      padding: 2em;
-    }
-}
-
+/*configuração do header*/
 header{
     height: 100vh;
     display: flex;
@@ -51,6 +27,27 @@ header{
     flex-wrap: wrap;
 }
 
+.site-title {
+    color: black;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 4em;
+    line-height: 1em;
+    margin-bottom: 20px;
+    text-align: center;    
+}
+
+.site-subtitle {
+    color: black ;
+    font-style: italic;
+    font-family: 'Courgette', cursive;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/*configuração do menu*/
 .menu {
     background-color: whitesmoke;
     position: fixed;
@@ -82,6 +79,22 @@ header{
 }
 
 /*configuração da parte sobre*/
+.sobre {
+    padding: 2.5em;
+    min-height: 100vh;
+}
+
+.sobre h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.sobre p {
+    margin-left: 2em;
+    padding: 0.1em;
+}
+
 .sobre a {
     transition: background-color 1s, color 1s;
 }
@@ -100,39 +113,34 @@ header{
     color: whitesmoke;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+.projetos p {
+    margin-left: 2em;
+    padding: 0.1em;
 }
 
-.site-title {
-    color: black;
-    text-align: center;
-    font-family: 'Courgette', cursive;
-    font-size: 4em;
-    line-height: 1em;
-    margin-bottom: 20px;
-    text-align: center;    
+.portfolio {
+    padding: 2.5em;
+    min-height: 100vh;
 }
 
-.site-subtitle {
-    color: black ;
-    font-style: italic;
-    font-family: 'Courgette', cursive;
-    font-weight: lighter;
-    text-align: center;
+.portfolio h2 {
+    color: black;
     font-size: 2em;
+    margin-bottom: .5em;
 }
 
-.sobre,
-.portfolio,
+.lista li {
+    list-style: none;
+    margin-left: 3em;
+    padding: 0.2em;
+}
+
+/*configuração da parte contato*/
 .contato {
     padding: 2.5em;
     min-height: 100vh;
 }
 
-.sobre h2,
-.portfolio h2,
 .contato h2 {
     color: black;
     font-size: 2em;
@@ -146,8 +154,8 @@ a {
 
 .contato a {
     color: black;
-    font-size: 4em;
-    transition: text-shadow 1s;
+    font-size: 3em;
+    transition: background-color 1s, color 1s;
 }
 
 .contato a:active,
@@ -158,19 +166,7 @@ a {
 
 .icons a{
     color: black;
-    font-size: 6em;
-}
-
-.sobre p,
-.projetos p {
-    margin-left: 2em;
-    padding: 0.1em;
-}
-
-.lista li {
-    list-style: none;
-    margin-left: 3em;
-    padding: 0.2em;
+    font-size: 4em;
 }
 
 /*botão voltar ao topo*/
@@ -178,4 +174,36 @@ a {
     position:fixed;
 	bottom:10px;
 	right:10px;
+}
+
+/*Parte responsivo*/
+@media(min-width:400px){
+    body{
+        font-size: 14px;
+    }
+    .contato,
+    .portfolio {
+      padding: 3em 2em 2em;
+      height: 100vh;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .contato,
+    .portfolio {
+      padding: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+    .contato,
+    .portfolio {
+      padding: 2em;
+    }
 }
