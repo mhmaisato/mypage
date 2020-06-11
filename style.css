@@ -46,7 +46,6 @@ header{
     font-size: 2em;
 }
 
-
 /*configuração do menu*/
 .menu {
     background-color: whitesmoke;
@@ -80,7 +79,7 @@ header{
 
 /*configuração da parte about*/
 .about {
-    padding: 2.5em;
+    padding: 3em;
     min-height: 100vh;
 }
 
@@ -105,21 +104,8 @@ header{
 }
 
 /*configuração da parte portfólio*/
-.portfolio a {
-    transition: background-color 1s, color 1s;
-}
-.portfolio a:hover {
-    background-color: black;
-    color: whitesmoke;
-}
-
-.projetos p {
-    margin-left: 2em;
-    padding: 0.1em;
-}
-
 .portfolio {
-    padding: 2.5em;
+    padding: 3em;
     min-height: 100vh;
 }
 
@@ -127,6 +113,19 @@ header{
     color: black;
     font-size: 2em;
     margin-bottom: .5em;
+}
+
+.projetos p {
+    margin-left: 2em;
+    padding: 0.1em;
+}
+
+.portfolio a {
+    transition: background-color 1s, color 1s;
+}
+.portfolio a:hover {
+    background-color: black;
+    color: whitesmoke;
 }
 
 .lista li {
@@ -137,7 +136,7 @@ header{
 
 /*configuração da parte contact*/
 .contact {
-    padding: 2.5em;
+    padding: 3em;
     min-height: 100vh;
 }
 
