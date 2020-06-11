@@ -1,0 +1,215 @@
+/*reset do css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*configuração do body*/
+body {
+    background-color: white;
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;
+}
+
+/*configuração do a href*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*configuração do header*/
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    color: black;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 4em;
+    line-height: 1em;
+    margin-bottom: 20px;
+    text-align: center;    
+}
+
+.site-subtitle {
+    color: black ;
+    font-style: italic;
+    font-family: 'Courgette', cursive;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/*configuração do menu*/
+.menu {
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex; /*deixa o menu na horizontal*/
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*configuração da parte about*/
+.about {
+    padding: 2.5em;
+    min-height: 100vh;
+}
+
+.about h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.about p {
+    margin-left: 2em;
+    padding: 0.1em;
+}
+
+.about a {
+    transition: background-color 1s, color 1s;
+}
+
+.about a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*configuração da parte portfólio*/
+.portfolio a {
+    transition: background-color 1s, color 1s;
+}
+.portfolio a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.projetos p {
+    margin-left: 2em;
+    padding: 0.1em;
+}
+
+.portfolio {
+    padding: 2.5em;
+    min-height: 100vh;
+}
+
+.portfolio h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.lista li {
+    list-style: none;
+    margin-left: 3em;
+    padding: 0.2em;
+}
+
+/*configuração da parte contact*/
+.contact {
+    padding: 2.5em;
+    min-height: 100vh;
+}
+
+.contact h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.contact,
+.icons {
+    text-align: center;
+  }
+
+.contact a {
+    color: black;
+    font-size: 3em;
+    transition: background-color 1s, color 1s;
+}
+
+.contact a:active,
+.contact a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.icons a{
+    color: black;
+    font-size: 4em;
+}
+
+/*botão voltar ao topo*/
+#subir{
+    position:fixed;
+	bottom:10px;
+	right:10px;
+}
+.voltarTopo a:active,
+.voltarTopo a:hover {
+    background-color: black;
+    color: whitesmoke;
+    transition: background-color 1s, color 1s;
+}
+
+/*Parte responsivo*/
+@media(min-width:400px){
+    body{
+        font-size: 14px;
+    }
+    .contact,
+    .portfolio {
+      padding: 3em 2em 2em;
+      height: 100vh;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .contact,
+    .portfolio {
+      padding: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+    .contact,
+    .portfolio {
+      padding: 2em;
+    }
+}
