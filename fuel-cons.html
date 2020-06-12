@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Fuel Comsuption</title>
+    <script src="https://kit.fontawesome.com/074634d9c3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fuel-cons.css"> 
+    <script  src="fuel-cons.js"></script>
+  </head>
+  <body>
+    <p>Fuel Comsuption calculation.</p>
+    <label for="inputKml">Input how many km/l your car does: </label>
+    <input id="inputKml" type="text" min="0">
+    <br>
+    <label for="inputTripDuration">Input Trip time duration in hours: </label>
+    <input id="inputTripDuration" type="text" min="0">
+    <br>
+    <label for="inputSpeed">Input average speed in km/h: </label>
+    <input id="inputSpeed" type="text" min="0">
+    <br>
+    <label for="inputPrice">Input fuel price: </label>
+    <input id="inputPrice" type="text" min="0">
+    <br>
+    <br>
+    <button id="botaoCalculate" onclick="calculate()">Calculate</button>
+    <br>
+    <p id="result"></p>
+    <br>
+    
+    <!-- botão voltar portfólio -->
+    <div>
+      <a href="index.html#portfolio"><i class="fas fa-chevron-left"></i> Back</a>
+    </div>
+  </body>
+</html>
