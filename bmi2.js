@@ -20,28 +20,19 @@ function calculate() {
 	height2 = changetocomma(height);
 
 
-	if (bmi<=17) {
-		message = "Seu IMC está abaixo de 17 - Você está Muito Abaixo do Weight."
-	}
-	else if (17 < bmi && bmi < 18.49) {
-		message = "Seu IMC está entre 17 e 18,49 - Você está Abaixo Weight."
+	if (bmi<=18.49) {
+		message = "BMI below 18,50 - Underweight."
 	}
 	else if (18.5 < bmi && bmi < 24.99) {
-		message = "Seu IMC está entre 18,50 e 24,99 - Você está com Weight Normal."
+		message = "BMI between 18,50 - 24,99 - Normal or Healthy Weight."
 	}
 	else if (25 < bmi && bmi < 29.99) {
-		message = "Seu IMC está entre 25 e 29,99 - Você está Acima do Weight."
+		message = "BMI between 25 - 29,99 - Overweight."
 	}
-	else if (30 < bmi && bmi < 34.99) {
-		message = "Seu IMC está entre 30 e 34,99 - Você está com Obesidade I."
+	else if (bmi > 30) {
+		message = "Seu IMC está entre 30 e 34,99 - Obese."
 	}
-	else if (35 < bmi && bmi < 39.99) {
-		message = "Seu IMC está entre 35 e 39,99 - Você está com Obesidade II (Severa)."
-	}
-	else if (bmi > 40) {
-		message = "Seu IMC está acima de 40 - Você está com Obesidade III (Mórbida)."
-	}
-
+	
 	result.innerHTML = `Com ${weight2}kg e ${height2}m, seu IMC é de: ${bmi2}.`
 	result2.innerHTML =`${message}`
 }
