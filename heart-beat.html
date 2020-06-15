@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Calculo-Batimentos-Cardiacos</title>
+  <title>Heart Beat</title>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Courgette&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/074634d9c3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="_estilos/bat-cardiaco.css">
-  <script  src="_scripts/bat-cardiaco.js"></script>
+  <link rel="stylesheet" href="heart-beat.css">
+  <script  src="heart-beat.js"></script>
 </head>
 
 <body>
-  <p>Digite a sua idade para saber quantas vezes o seu coração já bateu.
-  </p>
-  <label for="inputIdade">Digite a sua idade: </label>
-  <input id="inputIdade" type="number" min="0">
-  <button id="botaoCalcular" onclick="calcular()">Calcular</button>
+  <p>Calculate you heart beat.</p>
   <br>
-  <p id="resultado"></p>
+  <label for="inputAge">Input your age: </label>
+  <input id="inputAge" type="number" min="0">
+  <button id="botaoCalculate" onclick="calculate()">Calculate</button>
+  <br>
+  <p id="result"></p>
   
   <br>
   
   <!-- botão voltar portfólio -->
   <div>
-    <a href="index.html#portfolio"><i class="fas fa-chevron-left"></i> Voltar</a>
+    <a href="index.html#portfolio"><i class="fas fa-chevron-left"></i> Back</a>
   </div>
 </body>
 </html>

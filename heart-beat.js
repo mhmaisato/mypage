@@ -1,9 +1,9 @@
-function calcular() {
-    var idade = inputIdade.value;
-    batimentos_por_min = 75;
-    batimentos_ano = batimentos_por_min * 60 * 365;
-    batimentos_vida = batimentos_ano * idade;
+function calculate() {
+    var age = inputAge.value;
+    beat_min = 75;
+    beat_year = beat_min * 60 * 365;
+    beat_life = beat_year * age;
 
-    resultado.innerHTML = `Com ${idade} anos seu coração já bateu ${batimentos_vida} vezes.`
+    result.innerHTML = `With ${age} years your heart has already beat ${beat_life} times.`
 }
 
